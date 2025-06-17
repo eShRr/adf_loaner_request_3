@@ -21,6 +21,7 @@
                 <element inactive_on_update="false" label="New York" sequence="0" value="ny"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="other" type="string"/>
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
     </element>
 </database>
