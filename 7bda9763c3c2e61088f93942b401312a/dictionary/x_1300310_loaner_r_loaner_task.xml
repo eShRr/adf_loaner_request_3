@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ac06b128c35aea1088f93942b40131f5" extends="task" label="Loaner Task" max_length="40" name="x_1300310_loaner_r_loaner_task" type="collection"/>
+</database>
