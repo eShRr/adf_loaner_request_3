@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>SwitchBetweenOtherAndExistingDepos</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    // Add your code here
+
+	var location = current.getValue('depot');
+
+    if (location == 'other') {
+		location = current.getValue('other');
+    }
+
+	template.print(location);
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-19 19:20:43</sys_created_on>
+        <sys_id>3bc0fa24c39eea1088f93942b40131d6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>SwitchBetweenOtherAndExistingDepos</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1300310_loaner_r">7bda9763c3c2e61088f93942b401312a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">7bda9763c3c2e61088f93942b401312a</sys_scope>
+        <sys_update_name>sys_script_email_3bc0fa24c39eea1088f93942b40131d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-19 19:27:41</sys_updated_on>
+    </sys_script_email>
+</record_update>
